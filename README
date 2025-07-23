@@ -1,0 +1,65 @@
+# 🟡 Toko – PWA de Messagerie Modulaire
+
+**Toko** est une Progressive Web App de messagerie construite avec React, TypeScript, Tailwind CSS et une architecture Atomic Design.  
+Le projet explore des concepts modernes de composants réutilisables, accessibilité, et interface modulaire dans un contexte de communication, même en zone à faible connectivité.
+
+---
+
+## 🧠 Objectifs
+
+- Créer une app de chat simple, rapide et responsive
+- Permettre une séparation claire des responsabilités via Atomic Design
+- Intégrer une base UI solide avec typage strict et composants réutilisables
+- Préparer une future gestion en ligne / hors-ligne (PWA avancée)
+
+---
+
+## 🧱 Stack technique
+
+- **React** + **Vite**
+- **TypeScript**
+- **Tailwind CSS**
+- **clsx**
+- **Architecture Atomic Design**
+
+---
+
+## 🗂️ Structure du projet (partielle)
+
+src/
+│
+├── components/
+│ └── atoms/
+│ ├── Button/
+│ ├── Text/
+│ └── Heading/
+│
+├── App.tsx
+├── main.tsx
+└── index.css
+
+
+---
+
+## 📜 Licence & Droits
+
+Ce dépôt est un projet personnel en cours de développement.
+
+> 🛑 **Tous les droits sont réservés.**  
+> 🔐 Le code source, la structure et les idées du projet ne peuvent pas être copiés, reproduits ou réutilisés sans l'autorisation explicite de l'auteur.
+
+---
+
+## 👤 Auteur
+
+- Tim Sayfoutdinov – [timsay.fr](https://timsay.fr)
+- Contact : contact@timsay.fr
+
+---
+
+## 📌 Note
+
+Ce projet est protégé par le **droit d’auteur** dès sa création, même s’il est hébergé publiquement.  
+Le présent fichier README sert également de **preuve d’antériorité** en cas de litige.
+
+
