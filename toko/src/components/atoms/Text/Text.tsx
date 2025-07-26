@@ -3,13 +3,9 @@ import type { TextProps } from './Text.types'
 import clsx from 'clsx'
 
 const Text: FC<TextProps> = ({ as = 'p', className = '', children }) => {
-  const Tag = as
+    const Tag = as
 
-  return (
-    <Tag className={clsx('text-base text-gray-800', className)}>
-      {children}
-    </Tag>
-  )
+    return <Tag className={clsx('text-base text-gray-800', className)}>{children}</Tag>
 }
 
 export default Text
