@@ -46,6 +46,7 @@ il faut installer prittier
   "tabWidth": 4
 }
 ```
+- il faut égalemment ajouter dans package.json la commande `"format": "prettier --write ."`
 
 ensuite on structure nos dossier avec les commandes suivantes : 
 
