@@ -10,12 +10,12 @@ const borderVariant = {
 
 const Divider: FC<DividerProps> = ({
 	className = '',
-	variant = 'standard',
+	variant,
 	...props
 }) => {
 	return (
 		<div
-			className={multipleClassName(borderVariant[variant], className)}
+			className={multipleClassName(borderVariant[variant || 'standard'], className)}
 			{...props}
 		></div>
 	);
