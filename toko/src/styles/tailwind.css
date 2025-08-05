@@ -16,6 +16,16 @@
 	text-shadow: 2px 1px 1px var(--color-border);
 }
 
+.primary-link-text {
+	color: var(--color-primary);
+	text-shadow: 2px 1px 1px var(--color-border);
+}
+
+.alerte-link-text {
+	color: var(--color-primary);
+	text-shadow: 2px 1px 1px var(--color-border);
+}
+
 .alerte {
 	background-color: var(--color-alerte);
 }
