@@ -2,7 +2,14 @@ import type { FC } from 'react';
 import type { SelectProps } from './Select.types';
 import { multipleClassName } from '../../../utils/multipleClassName';
 
-const Select: FC<SelectProps> = ({ className = '', options, ...props }) => {
+const Select: FC<SelectProps> = ({
+	className,
+	value,
+	onChange,
+	disabled,
+	options,
+	...props
+}) => {
 	return (
 		<select
 			className={multipleClassName(
@@ -11,9 +18,13 @@ const Select: FC<SelectProps> = ({ className = '', options, ...props }) => {
 			)}
 			{...props}
 		>
-			{options.map(({ label, value }) => (
-				<option key={value} value={value}>
-					{label}
+			{options.map((opt) => (
+				<option
+					key={opt.value}
+					value={opt.value}
+					disabled={opt.disabled}
+				>
+					{opt.label}
 				</option>
 			))}
 		</select>

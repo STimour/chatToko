@@ -11,6 +11,8 @@ const FormField: FC<FormFieldProps> = ({
 	divClassName,
 	description,
 	error,
+	value,
+	onChange,
 	...props
 }) => {
 	return (
@@ -24,9 +26,13 @@ const FormField: FC<FormFieldProps> = ({
 					className={`border-standard p-2 rounded-md ${
 						error ? 'alerte' : ''
 					}`}
+					value={value}
+					onChange={onChange}
 					aria-invalid={!!error}
 					aria-describedby={
-						description || error ? `${inputName}-desc` : undefined
+						description || error
+							? `${inputName}-desc`
+							: `${inputName}-error`
 					}
 					{...props}
 				/>
@@ -34,7 +40,7 @@ const FormField: FC<FormFieldProps> = ({
 				{error ? (
 					<Text
 						as="p"
-						id={`${inputName}-desc`}
+						id={`${inputName}-error`}
 						className="text-sm alerte-link-text"
 					>
 						{error}

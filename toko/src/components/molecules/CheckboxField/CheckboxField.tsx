@@ -16,8 +16,18 @@ const CheckboxField: FC<CheckboxFieldProps> = ({
 	labelClassName,
 	error,
 	description,
+	checked,
+	onChange,
+	disabled,
+	required,
 	...props
 }) => {
+	const descId = error
+		? `${checkBoxName}-error`
+		: description
+			? `${checkBoxName}-desc`
+			: undefined;
+
 	return (
 		<div className={divClassName}>
 			{dividerVariant && (
@@ -33,8 +43,12 @@ const CheckboxField: FC<CheckboxFieldProps> = ({
 				<Checkbox
 					id={checkBoxName}
 					name={checkBoxName}
-					aria-invalid={!!error || undefined} // ⚖️ attribut ARIA uniquement si vrai
-					aria-describedby={checkBoxName}
+					checked={checked}
+					onChange={onChange}
+					disabled={disabled}
+					required={required}
+					aria-invalid={!!error || undefined}
+					aria-describedby={descId}
 					className={multipleClassName(
 						error ? 'alerte' : '',
 						checkBoxClassName,
