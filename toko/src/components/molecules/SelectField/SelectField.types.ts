@@ -1,12 +1,13 @@
-import type { SelectHTMLAttributes } from "react";
-import type { SelectOptions } from "../../atoms/Select";
+import type { SelectHTMLAttributes } from 'react';
+import type { SelectOptions } from '../../atoms/Select';
 
-export interface SelectFieldProps extends SelectHTMLAttributes<HTMLSelectElement> {
-    label: string;
+export interface SelectFieldProps
+	extends SelectHTMLAttributes<HTMLSelectElement> {
+	label: string;
 	inputName: string;
-    options: SelectOptions[],
+	options: SelectOptions[];
 	className?: string;
-    divClassName?: string;
+	divClassName?: string;
 	description?: string;
 	error?: string;
 }

@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import type { DividerProps } from './Divider.types';
-import { multipleClassName } from '../../../utils/MultipleClassName';
+import { multipleClassName } from '../../../utils/multipleClassName';
 
 const borderVariant = {
 	horizontal: 'border-styled-horizontal',
@@ -8,14 +8,13 @@ const borderVariant = {
 	standard: 'border-standard',
 };
 
-const Divider: FC<DividerProps> = ({
-	className = '',
-	variant,
-	...props
-}) => {
+const Divider: FC<DividerProps> = ({ className = '', variant, ...props }) => {
 	return (
 		<div
-			className={multipleClassName(borderVariant[variant || 'standard'], className)}
+			className={multipleClassName(
+				borderVariant[variant || 'standard'],
+				className,
+			)}
 			{...props}
 		></div>
 	);

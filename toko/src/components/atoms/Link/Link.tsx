@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import type { LinkProps } from './Link.types';
-import { multipleClassName } from '../../../utils/MultipleClassName';
+import { multipleClassName } from '../../../utils/multipleClassName';
 
 const variantClasses = {
 	primary: 'no-underline primary-link-text',

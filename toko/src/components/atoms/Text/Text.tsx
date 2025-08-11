@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import type { TextProps } from './Text.types';
-import { multipleClassName } from '../../../utils/MultipleClassName';
+import { multipleClassName } from '../../../utils/multipleClassName';
 
 const Text: FC<TextProps> = ({ as = 'p', className = '', children }) => {
 	const Tag = as;

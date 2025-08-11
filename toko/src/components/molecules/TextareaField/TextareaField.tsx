@@ -1,9 +1,9 @@
-import type { FC } from "react";
-import type { TextareaFieldProps } from "./TextareaField.types";
-import Divider from "../../atoms/Divider";
-import Label from "../../atoms/Label";
-import Text from "../../atoms/Text";
-import Textarea from "../../atoms/Textarea";
+import type { FC } from 'react';
+import type { TextareaFieldProps } from './TextareaField.types';
+import Divider from '../../atoms/Divider';
+import Label from '../../atoms/Label';
+import Text from '../../atoms/Text';
+import Textarea from '../../atoms/Textarea';
 const TextareaField: FC<TextareaFieldProps> = ({
 	label,
 	inputName,
@@ -13,9 +13,8 @@ const TextareaField: FC<TextareaFieldProps> = ({
 	error,
 	...props
 }) => {
-
-    return(
-       <div className={divClassName}>
+	return (
+		<div className={divClassName}>
 			<Divider variant="horizontal" className="h-full" />
 			<div>
 				<Label htmlFor={inputName}>{label}</Label>
@@ -50,8 +49,8 @@ const TextareaField: FC<TextareaFieldProps> = ({
 					</Text>
 				) : null}
 			</div>
-		</div> 
-    )
+		</div>
+	);
 };
 
 export default TextareaField;

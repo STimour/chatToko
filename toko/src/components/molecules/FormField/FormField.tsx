@@ -8,7 +8,7 @@ const FormField: FC<FormFieldProps> = ({
 	label,
 	inputName,
 	className,
-    divClassName,
+	divClassName,
 	description,
 	error,
 	...props

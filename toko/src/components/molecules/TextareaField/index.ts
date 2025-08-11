@@ -1,2 +1,2 @@
-export { default } from './TextareaField'
-export * from './TextareaField.types'
+export { default } from './TextareaField';
+export * from './TextareaField.types';
