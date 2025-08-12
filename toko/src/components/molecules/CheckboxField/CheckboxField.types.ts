@@ -1,6 +1,6 @@
 import type { ChangeEvent } from 'react';
 import type { CheckboxProps } from '../../atoms/Checkbox';
-import type { BorderVariant } from '../../atoms/Divider';
+import type { DividerVariant } from '../../atoms/Divider';
 
 export interface CheckboxFieldProps extends CheckboxProps {
 	checkBoxName: string;
@@ -19,7 +19,7 @@ export interface CheckboxFieldProps extends CheckboxProps {
 	labelClassName?: string;
 	checkBoxClassName?: string;
 	dividerClassName?: string;
-	dividerVariant?: BorderVariant;
+	dividerVariant?: DividerVariant;
 
 	// Optionnels utiles
 	disabled?: boolean;

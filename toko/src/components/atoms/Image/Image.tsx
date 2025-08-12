@@ -12,7 +12,7 @@ const Image: FC<ImageProps> = ({
 
 	return (
 		<img
-			className={` ${className}`}
+			className={className}
 			src={error ? fallback : src}
 			alt={generateAltText(src)}
 			onError={() => setError(true)}

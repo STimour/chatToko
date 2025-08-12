@@ -5,32 +5,42 @@ import Image from '../../atoms/Image';
 import Text from '../../atoms/Text';
 
 const ButtonField: FC<ButtonFieldProps> = ({
-	divClassName,
 	label,
 	buttonClassName,
-	image,
-	text,
+	imageSrc,
+	imageClassName,
+	textAs,
+	textChildren,
+	textClassName,
+	type,
+	onClick,
 	...props
 }) => {
 	return (
-		<div className={divClassName}>
-			<Button className={buttonClassName} {...props}>
-				<span className="inline-flex items-center gap-2">
-					{image?.src && (
-						<Image className={image.className} src={image.src} />
-					)}
-					{text?.children && (
-						<Text
-							as={text.as}
-							className={text.className}
-							id={`${text.as}-${label}`}
-						>
-							{text.children}
-						</Text>
-					)}
-				</span>
-			</Button>
-		</div>
+		<Button
+			type={type}
+			className={buttonClassName}
+			onClick={onClick}
+			{...props}
+		>
+			<span className="inline-flex items-center gap-2">
+				{imageSrc && (
+					<Image
+						className={imageClassName ? imageClassName : ''}
+						src={imageSrc}
+					/>
+				)}
+				{textChildren && (
+					<Text
+						as={textAs}
+						className={textClassName}
+						id={`${textAs}-${label}`}
+					>
+						{textChildren}
+					</Text>
+				)}
+			</span>
+		</Button>
 	);
 };
 

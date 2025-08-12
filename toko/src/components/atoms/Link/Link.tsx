@@ -11,9 +11,9 @@ const Link: FC<LinkProps> = ({
 	variant = 'primary',
 	externalLink = false,
 	children,
-	className = '',
-	target = '',
-	rel = '',
+	className,
+	target,
+	rel,
 	...props
 }) => {
 	return (
