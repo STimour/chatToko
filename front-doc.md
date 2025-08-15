@@ -88,7 +88,7 @@ import './styles/tailwind.css'
 ------
 ### Structure Complète et rôles des dossiers
 
-```css
+```js
 src/
 ├── components/
 │   ├── atoms/
@@ -197,3 +197,10 @@ Pourquoi ?
 ✅ Rendre notre code plus lisible et cohérent
 
 ----- 
+
+
+
+
+
+
+Pour la navigation entre les pages -> npm i react-router-dom

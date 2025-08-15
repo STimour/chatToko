@@ -1,10 +1,10 @@
 import { useState, type FC } from 'react';
 import type { ImageProps } from './Image.types';
+import { generateAltText } from '../../../utils/generateAltText';
 
 const Image: FC<ImageProps> = ({
 	className = '',
 	src = '',
-	alt = '',
 	fallback = '/placeholder.jpg', // image de remplacement
 	...props
 }) => {
@@ -12,9 +12,9 @@ const Image: FC<ImageProps> = ({
 
 	return (
 		<img
-			className={` ${className}`}
+			className={className}
 			src={error ? fallback : src}
-			alt={alt}
+			alt={generateAltText(src)}
 			onError={() => setError(true)}
 			{...props}
 		/>

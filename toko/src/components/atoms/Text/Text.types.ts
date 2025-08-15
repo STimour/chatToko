@@ -1,5 +1,6 @@
 export interface TextProps {
-	as?: 'p' | 'span' | 'div';
-	className?: string;
+	as: 'p' | 'span' | 'figcaption';
 	children: React.ReactNode;
+	id?: string;
+	className?: string;
 }

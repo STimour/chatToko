@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import type { ButtonProps } from './Button.types';
-import { multipleClassName } from '../../../utils/MultipleClassName';
+import { multipleClassName } from '../../../utils/multipleClassName';
 
 const variantClasses = {
 	primary: 'primary hover:opacity-90',
