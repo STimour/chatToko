@@ -1,7 +1,7 @@
-import type { LinkProps } from "../../atoms/Link";
-
-export interface LinkWithIconProps extends LinkProps {
-	href: string;
+export interface HeaderMenuProps {
+	headerClassName: string,
+	headerLabel: string,
+    href: string;
 	imageSrc: string;
 	text: string;
 	width: string;

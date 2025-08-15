@@ -5,11 +5,9 @@ import Image from '../../atoms/Image';
 import Text from '../../atoms/Text';
 
 const ButtonField: FC<ButtonFieldProps> = ({
-	label,
 	buttonClassName,
 	imageSrc,
 	imageClassName,
-	textAs,
 	textChildren,
 	textClassName,
 	type,
@@ -32,9 +30,9 @@ const ButtonField: FC<ButtonFieldProps> = ({
 				)}
 				{textChildren && (
 					<Text
-						as={textAs}
+						as="span"
 						className={textClassName}
-						id={`${textAs}-${label}`}
+						id={`span-${textChildren.replace(' ', '-')}`}
 					>
 						{textChildren}
 					</Text>
