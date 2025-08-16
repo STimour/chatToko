@@ -7,6 +7,8 @@ export interface ButtonFieldProps extends ButtonProps {
 	// Bouton
 	buttonClassName?: string;
 	
+	width: string;
+	height: string;
 	// Image optionnelle
 	imageSrc?: string;
 	imageClassName?: string;

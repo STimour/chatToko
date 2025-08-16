@@ -15,6 +15,8 @@ const SearchFormField: FC<SearchFormFieldProps> = ({
     textChildren,
     textClassName,
     imageSrc,
+    width,
+	height,
     imageClassName
 }) => {
     return (
@@ -33,6 +35,8 @@ const SearchFormField: FC<SearchFormFieldProps> = ({
                 textChildren={textChildren}
                 textClassName={textClassName}
                 variant="primary"
+                width={width}
+                height={height}
             />
         </div>
     );

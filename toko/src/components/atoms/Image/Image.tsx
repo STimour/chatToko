@@ -1,6 +1,6 @@
 import { useState, type FC } from 'react';
 import type { ImageProps } from './Image.types';
-import { generateAltText } from '../../../utils/generateAltText';
+import { generateCleanAltText } from '../../../utils/generateAltText';
 
 const Image: FC<ImageProps> = ({
 	className = '',
@@ -14,7 +14,7 @@ const Image: FC<ImageProps> = ({
 		<img
 			className={className}
 			src={error ? fallback : src}
-			alt={generateAltText(src)}
+			alt={generateCleanAltText(src)}
 			onError={() => setError(true)}
 			{...props}
 		/>

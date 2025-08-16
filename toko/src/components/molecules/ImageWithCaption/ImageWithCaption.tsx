@@ -26,6 +26,7 @@ const ImageWithCaption: FC<ImageWithCaptionProps> = ({
 				className={imageClassName ? imageClassName : ''}
 				width={width}
 				height={height}
+				alt={caption}
 			/>
 			<Text as={as} className={captionClassName}>
 				{caption}

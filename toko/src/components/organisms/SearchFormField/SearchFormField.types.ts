@@ -15,6 +15,8 @@ export interface SearchFormFieldProps {
     labelButton?: string;
     buttonClassName?: string;
     
+    width: string;
+	height: string;
     // Image optionnelle
     imageSrc?: string;
     imageClassName?: string;

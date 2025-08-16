@@ -32,6 +32,8 @@ const LinkWithIcon: FC<LinkWithIconProps> = ({
 				className={imageClassName || ''}
 				width={width}
 				height={height}
+				alt=""
+				aria-hidden="true"
 			/>
 			{text && (
 				<Text as="span" className={textClassName}>

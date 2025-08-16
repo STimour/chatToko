@@ -1,13 +1,16 @@
 export interface ImageWithCaptionProps {
-	as: 'p' | 'span' | 'figcaption';
 	imageSrc: string;
-
+	
+	width: string;
+	height: string;
+	
 	caption: string;
 	captionClassName?: string;
-
+	
 	imageClassName?: string;
 	containerClassName?: string;
-
-	width?: number | string;
-	height?: number | string;
+	
+	
+	as?: 'p' | 'span' | 'figcaption';
+	alt?: string;
 }

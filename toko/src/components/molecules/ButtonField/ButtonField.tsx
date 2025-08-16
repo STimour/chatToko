@@ -8,6 +8,8 @@ const ButtonField: FC<ButtonFieldProps> = ({
 	buttonClassName,
 	imageSrc,
 	imageClassName,
+	width,
+	height,
 	textChildren,
 	textClassName,
 	type,
@@ -17,6 +19,7 @@ const ButtonField: FC<ButtonFieldProps> = ({
 	return (
 		<Button
 			type={type}
+			aria-label={textChildren}
 			className={buttonClassName}
 			onClick={onClick}
 			{...props}
@@ -25,7 +28,7 @@ const ButtonField: FC<ButtonFieldProps> = ({
 				{imageSrc && (
 					<Image
 						className={imageClassName ? imageClassName : ''}
-						src={imageSrc}
+						src={imageSrc} width={width} height={height}
 					/>
 				)}
 				{textChildren && (

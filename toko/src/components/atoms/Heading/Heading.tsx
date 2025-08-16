@@ -2,7 +2,7 @@ import type { FC, JSX } from 'react';
 import type { HeadingProps } from './Heading.types';
 import { multipleClassName } from '../../../utils/multipleClassName';
 
-export const variants = {
+export const headingVariants = {
 	1: 'text-6xl',
 	2: 'text-5xl',
 	3: 'text-4xl',
@@ -11,9 +11,9 @@ export const variants = {
 	6: 'text-xl',
 };
 
-const Heading: FC<HeadingProps> = ({ level = 1, children, className = '' }) => {
+const Heading: FC<HeadingProps> = ({ level, children, className = '' }) => {
 	const Tag = `h${level}` as keyof JSX.IntrinsicElements;
-	const policeSize = variants[level] || variants[1];
+	const policeSize = headingVariants[level];
 
 	return (
 		<Tag className={multipleClassName(policeSize, className)}>
