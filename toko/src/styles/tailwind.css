@@ -15,12 +15,18 @@
 	text-shadow: 2px 1px 1px var(--color-border);
 }
 
-html, body{
-  height: 100%;
+html,
+body {
+	height: 100%;
 }
 
-body{
-	background: linear-gradient(135deg, #190c28 0%, var(--color-border) 60%, var(--color-bg) 100%);
+body {
+	background: linear-gradient(
+		135deg,
+		#190c28 0%,
+		var(--color-border) 60%,
+		var(--color-bg) 100%
+	);
 }
 /* ANCHOR Ça s’applique aussi aux <img> et aux icônes SVG : parfois ça “salit” le rendu. 
 		  le suivant bloc neutralise

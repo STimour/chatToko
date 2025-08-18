@@ -28,7 +28,9 @@ const ButtonField: FC<ButtonFieldProps> = ({
 				{imageSrc && (
 					<Image
 						className={imageClassName ? imageClassName : ''}
-						src={imageSrc} width={width} height={height}
+						src={imageSrc}
+						width={width}
+						height={height}
 					/>
 				)}
 				{textChildren && (

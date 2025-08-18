@@ -1,2 +1,2 @@
-export {default } from './ImageWithCaption'
-export * from './ImageWithCaption.types'
+export { default } from './ImageWithCaption';
+export * from './ImageWithCaption.types';

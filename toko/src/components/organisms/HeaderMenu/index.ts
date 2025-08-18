@@ -1,2 +1,2 @@
-export {default} from './HeadreMenu'
-export * from './HeaderMenu.types'
+export { default } from './HeadreMenu';
+export * from './HeaderMenu.types';

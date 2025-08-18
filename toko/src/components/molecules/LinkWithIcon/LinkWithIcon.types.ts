@@ -1,4 +1,4 @@
-import type { LinkProps } from "../../atoms/Link";
+import type { LinkProps } from '../../atoms/Link';
 
 export interface LinkWithIconProps extends LinkProps {
 	href: string;

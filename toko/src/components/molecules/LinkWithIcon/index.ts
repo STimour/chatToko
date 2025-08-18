@@ -1,2 +1,2 @@
-export {default } from './LinkWithIcon'
-export * from './LinkWithIcon.types'
+export { default } from './LinkWithIcon';
+export * from './LinkWithIcon.types';

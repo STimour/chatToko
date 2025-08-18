@@ -1,27 +1,21 @@
-import type { DividerVariant } from "../../atoms/Divider";
+import type { DividerVariant } from '../../atoms/Divider';
 import type { MouseEvent } from 'react';
 
 export interface FooterMenuProps {
-	//Header container
-	footerClassName: string,
-	
-	//Link+Icon
-	hrefIconConversations: string
-	imageSrcConversations: string;
-	
-	hrefSrcParameter: string;
-	imageSrcParameter: string;
-
-	btnDisconnect: string;
-	imageBtnDisconnect: string;
-	
-	imageClassName: string;
-	width:string,
-	height:string,
-
-	onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
-	
-	// Optionnal 
-	dividerVariant?: DividerVariant;
-	linkClassName?: string;
+    // Container
+    footerClassName: string;
+    
+    // Button de déconnexion
+    btnDisconnect: string;
+    imageBtnDisconnect: string;
+    onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
+    
+    // Styling des éléments
+    width: string;
+    height: string;
+    imageClassName: string;
+    linkClassName?: string;
+    
+    // Divider optionnel
+    dividerVariant?: DividerVariant;
 }

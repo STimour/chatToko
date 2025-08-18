@@ -17,8 +17,6 @@ const LinkWithIcon: FC<LinkWithIconProps> = ({
 	externalLink,
 	...linkProps
 }) => {
-
-
 	return (
 		<Link
 			href={href}

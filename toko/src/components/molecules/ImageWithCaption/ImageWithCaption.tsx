@@ -7,6 +7,7 @@ import type { ImageWithCaptionProps } from './ImageWithCaption.types';
 const ImageWithCaption: FC<ImageWithCaptionProps> = ({
 	imageSrc,
 	as = 'figcaption',
+	ariaLabel,
 	caption,
 	captionClassName,
 	imageClassName,
@@ -28,7 +29,7 @@ const ImageWithCaption: FC<ImageWithCaptionProps> = ({
 				height={height}
 				alt={caption}
 			/>
-			<Text as={as} className={captionClassName}>
+			<Text as={as} className={captionClassName} aria-label={ariaLabel}>
 				{caption}
 			</Text>
 		</div>

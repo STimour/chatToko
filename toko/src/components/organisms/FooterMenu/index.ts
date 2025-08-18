@@ -1,2 +1,2 @@
-export {default} from './FooterMenu'
-export * from './FooterMenu.types'
+export { default } from './FooterMenu';
+export * from './FooterMenu.types';

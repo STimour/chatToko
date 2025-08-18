@@ -1,7 +1,7 @@
-import type { TextareaHTMLAttributes } from 'react';
+import type { TextAreaProps } from '../../atoms/Textarea';
 
 export interface TextareaFieldProps
-	extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+	extends TextAreaProps {
 	label: string;
 	inputName: string;
 	className?: string;
